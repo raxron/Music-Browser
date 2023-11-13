@@ -1,4 +1,4 @@
-import "./../../styles/homeMain.css";
+import "../../styles/homeMain.css";
 import MyList from "./MyList";
 import Lyric from "./Lyric";
 

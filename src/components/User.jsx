@@ -1,9 +1,8 @@
-import "./../styles/styles.css";
-import "./../styles/user.css";
-import { useState, useEffect, useRef } from "react";
-import data from "../../../data/data.json";
+import "../styles/user.css";
+import { useState, useEffect } from "react";
+import data from "../data/data.json";
 import { Link } from "react-router-dom";
-import userPic from "../../public/user-pic.jpg";
+import userPic from "../public/user-pic.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
 import { faBell } from "@fortawesome/free-regular-svg-icons";

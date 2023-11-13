@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
-import "./../styles/styles.css";
-import data from "../../data/data.json";
+import "../styles/styles.css";
+import data from "../data/data.json";
 
 export default function Playlist() {
   const { playlistId } = useParams();

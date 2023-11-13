@@ -1,8 +1,8 @@
-import "./../../styles/searchBar.css";
+import "../../styles/searchBar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMagnifyingGlass,
-  faCaretLeft
+  faCaretLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
@@ -35,7 +35,7 @@ const SearchBar = React.forwardRef(
         <button onClick={handleSearch}>Search</button>
       </div>
     );
-  }
+  },
 );
 
 export default SearchBar;

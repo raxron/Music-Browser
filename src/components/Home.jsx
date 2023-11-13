@@ -1,11 +1,11 @@
-import "./../styles/home.css";
+import "../styles/home.css";
 import { useState } from "react";
 import User from "./User";
 import Search from "./Search/Search";
 import { Link } from "react-router-dom";
-import soundFx from "../../public/soundfx.svg";
-import logo from "../../public/logo.svg";
-import music from "../../public/music.jpg";
+import soundFx from "../public/soundfx.svg";
+import logo from "../public/logo.svg";
+import music from "../public/music.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { faHeartCircleCheck } from "@fortawesome/free-solid-svg-icons";

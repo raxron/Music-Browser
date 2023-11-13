@@ -1,7 +1,7 @@
-import "./../../styles/search.css";
+import "../../styles/search.css";
 import { useState, useEffect, useRef } from "react";
 import SearchRecommend from "./SearchRecommend";
-import data from "../../../data/data.json";
+import data from "../../data/data.json";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFaceSadCry } from "@fortawesome/free-regular-svg-icons";
@@ -28,7 +28,7 @@ export default function Search() {
         p.song.some(
           (s) =>
             s.name.toLowerCase().includes(term) ||
-            s.artist.toLowerCase().includes(term)
+            s.artist.toLowerCase().includes(term),
         ) ||
         p.creator.toLowerCase().includes(term)
       );

@@ -1,5 +1,5 @@
-import "./../../styles/myList.css";
-import data from "../../../data/data.json";
+import "../../styles/myList.css";
+import data from "../../data/data.json";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 

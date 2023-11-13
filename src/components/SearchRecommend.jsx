@@ -1,4 +1,4 @@
-import "./../styles/styles.css";
+import "../styles/searchRecommend.css";
 
 export default function SearchRecommend() {
   return (
