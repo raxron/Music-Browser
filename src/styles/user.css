@@ -7,6 +7,7 @@
   padding-left: 1em;
   border-left: 0.01em solid var(--white-20);
   height: 100vh;
+  padding-bottom: 8.5em;
 }
 /*Status Bar*/
 .user_statusBar {

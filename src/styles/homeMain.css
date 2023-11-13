@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 2em;
   padding-top: 2em;
+  margin-bottom: 8.5em;
 }
 .main_title h1 {
   color: var(--primary-color);

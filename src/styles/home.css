@@ -18,6 +18,7 @@
   z-index: 100;
   background: var(--black-color);
   border-right: 0.01em solid var(--white-20);
+  padding-bottom: 8.5em;
 }
 .nav a {
   color: var(--white-color);
