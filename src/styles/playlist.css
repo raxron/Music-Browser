@@ -1,0 +1,6 @@
+.playlist_item h1,
+p,
+h3,
+li {
+  color: var(--white-color);
+}

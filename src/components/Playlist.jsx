@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import "../styles/styles.css";
+import "../styles/playlist.css";
 import data from "../data/data.json";
 
 export default function Playlist() {
@@ -17,7 +17,7 @@ export default function Playlist() {
         <img src={playlist.image} alt={`Playlist ${playlist.playlist}`} />
         <p>Creator: {playlist.creator}</p>
 
-        <h2>Songs:</h2>
+        <h3>Songs:</h3>
         <ul>
           {playlist.song.map((song, j) => (
             <li key={j}>
