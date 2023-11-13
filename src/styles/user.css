@@ -3,6 +3,10 @@
   flex-direction: column;
   align-items: center;
   gap: 4em;
+  padding-right: 1em;
+  padding-left: 1em;
+  border-left: 0.01em solid var(--white-20);
+  height: 100vh;
 }
 /*Status Bar*/
 .user_statusBar {
@@ -10,6 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 1em;
   padding-bottom: 1em;
   border-bottom: 0.05em solid var(--white-20);
 }
@@ -48,24 +53,12 @@
 .user_profile_background {
   position: absolute;
   z-index: 1;
-  width: 10.6em;
-  height: 10.6em;
   background: var(--gradient);
   border-radius: 100%;
-  transition: background 0.2s ease;
-}
-.user_profile_imgBox:hover .user_profile_background {
-  animation: rotate360 2s linear infinite;
+  width: 10.6em;
+  height: 10.6em;
 }
 
-@keyframes rotate360 {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .user_profile_imgBox img {
   width: 10em;
   height: 10em;

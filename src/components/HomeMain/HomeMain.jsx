@@ -1,6 +1,5 @@
 import "../../styles/homeMain.css";
 import MyList from "./MyList";
-import Lyric from "./Lyric";
 
 export default function HomeMain() {
   return (
@@ -12,7 +11,6 @@ export default function HomeMain() {
       </div>
       <div className="main_lists">
         <MyList />
-        <Lyric />
       </div>
     </div>
   );

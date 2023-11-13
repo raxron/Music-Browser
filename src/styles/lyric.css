@@ -1,0 +1,67 @@
+.music_container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: var(--black-color);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+.music {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.fa_icons {
+  font-size: 1.2em;
+  color: var(--white-color);
+  cursor: pointer;
+}
+.fa_icons_l {
+  color: var(--white-color);
+  font-size: 2.25em;
+  cursor: pointer;
+}
+.fa_icons:hover,
+.fa_icons_l:hover {
+  color: var(--primary-color);
+}
+.music_controls {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+.music_playPause {
+  position: relative;
+  width: 3em;
+  height: 2em;
+}
+.fa_icons_play,
+.fa_icons_pause {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.music_bar {
+  min-width: 30em;
+  height: 0.3em;
+  border-radius: 1em;
+  background: var(--white-color);
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.music_time {
+  cursor: default;
+  min-width: 30em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

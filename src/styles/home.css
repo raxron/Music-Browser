@@ -8,17 +8,20 @@
 .main_itemContainer {
   width: 100%;
 }
+/*navigation*/
 .nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  width: 15em;
   z-index: 100;
   background: var(--black-color);
+  border-right: 0.01em solid var(--white-20);
 }
 .nav a {
   color: var(--white-color);
-  font-size: 1.25em;
+  font-size: 1em;
 }
 .nav_links {
   display: flex;
@@ -27,24 +30,51 @@
   margin-left: 2em;
   padding-top: 5em;
 }
+.nav a:hover {
+  color: var(--secondary-color);
+}
 .nav_links img {
   width: 5em;
   height: auto;
 }
-/**/
 
+/**/
+.nav_musicContainer {
+  display: flex;
+  flex-direction: column;
+}
+.nav_soundFx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--gradient-2);
+  width: 15em;
+}
+.nav_soundFx img {
+  width: 12em;
+  height: auto;
+  object-fit: fill;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
 .nav_song {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 .nav_song img {
   width: 2.5em;
   height: 2.5em;
+  border-radius: 100%;
 }
 .nav_song h3 {
   color: var(--white-color);
   font-size: 1em;
+  font-weight: normal;
 }
 .nav_song p {
   color: var(--white-30);
@@ -59,4 +89,42 @@
   justify-content: center;
   align-items: center;
   gap: 1em;
+}
+.nav_icon {
+  display: none;
+}
+@media (max-width: 768px) {
+  .nav_icon {
+    display: flex;
+  }
+  .nav {
+    display: none;
+  }
+
+  .nav_icon_links {
+    display: flex;
+    width: 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin-left: 1.5em;
+    padding-top: 5.75em;
+  }
+  .nav_icon_links img {
+    width: 2em;
+  }
+  .nav_icon_item {
+    width: 2em;
+    height: 2em;
+    background-color: var(--white-20);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fa_navIcon {
+    font-size: 1em;
+    color: var(--white-color);
+  }
 }
