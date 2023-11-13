@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.container h3 {
+  width: 100%;
+  color: var(--white-color);
+}
+.item_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+.item {
+  width: 10em;
+  height: 10em;
+  border-radius: 0.5em;
+  background: var(--gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 0.1em solid transparent;
+}
+.item:hover {
+  border: 0.1em solid var(--secondary-color);
+}
+.item p {
+  color: var(--white-color);
+  font-weight: bold;
+}

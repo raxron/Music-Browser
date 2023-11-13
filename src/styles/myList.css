@@ -1,0 +1,34 @@
+.main_lists_itemContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+.main_lists_itemContainer h3 {
+  color: var(--white-color);
+}
+.main_lists_item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+.main_lists_item img {
+  width: 10em;
+  height: 10em;
+  border-radius: 0.5em;
+  border: 0.1em solid transparent;
+}
+.main_lists_item h3 {
+  font-size: 0.9em;
+}
+.main_lists_item p {
+  color: var(--white-30);
+}
+
+.main_lists_item_content:hover img {
+  border: 0.1em solid var(--secondary-color);
+}
+.main_lists_item_content:hover h3 {
+  color: var(--primary-color);
+}

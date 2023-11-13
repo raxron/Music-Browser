@@ -1,0 +1,62 @@
+.home {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  gap: 2em;
+}
+.main_itemContainer {
+  width: 100%;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  z-index: 100;
+  background: var(--black-color);
+}
+.nav a {
+  color: var(--white-color);
+  font-size: 1.25em;
+}
+.nav_links {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-left: 2em;
+  padding-top: 5em;
+}
+.nav_links img {
+  width: 5em;
+  height: auto;
+}
+/**/
+
+.nav_song {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_song img {
+  width: 2.5em;
+  height: 2.5em;
+}
+.nav_song h3 {
+  color: var(--white-color);
+  font-size: 1em;
+}
+.nav_song p {
+  color: var(--white-30);
+  font-size: 0.8em;
+}
+.fa_heart {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.nav_song_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}

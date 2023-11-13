@@ -1,0 +1,87 @@
+{
+  "music": [
+    {
+      "id": 1,
+      "playlist": "KDA Pop Star",
+      "creator": "DjSona",
+      "image": "https://picsum.photos/200",
+      "genre": "Pop",
+      "song": [
+        { "name": "music1", "album": "album1", "artist": "artist1" },
+        { "name": "music2", "album": "album2", "artist": "artist2" },
+        { "name": "music3", "album": "album3", "artist": "artist3" },
+        { "name": "music4", "album": "album4", "artist": "artist4" }
+      ]
+    },
+    {
+      "id": 2,
+      "playlist": "Rumble Remix",
+      "creator": "user2",
+      "image": "https://picsum.photos/200",
+      "genre": "Country",
+      "song": [
+        { "name": "music1", "album": "album1", "artist": "artist1" },
+        { "name": "music2", "album": "album2", "artist": "artist2" },
+        { "name": "music3", "album": "album3", "artist": "artist3" },
+        { "name": "music4", "album": "album4", "artist": "artist4" },
+        { "name": "music5", "album": "album5", "artist": "artist5" }
+      ]
+    },
+    {
+      "id": 3,
+      "playlist": "Pentakill Band",
+      "creator": "user3",
+      "image": "https://picsum.photos/200",
+      "genre": "Rock",
+      "song": [
+        { "name": "music1", "album": "album1", "artist": "artist1" },
+        { "name": "music2", "album": "album2", "artist": "artist2" },
+        { "name": "music3", "album": "album3", "artist": "artist3" },
+        { "name": "music4", "album": "album4", "artist": "artist4" },
+        { "name": "music5", "album": "album5", "artist": "artist5" }
+      ]
+    },
+    {
+      "id": 4,
+      "playlist": "Space Groove",
+      "creator": "user4",
+      "image": "https://picsum.photos/200",
+      "genre": "EDM",
+      "song": [
+        { "name": "music1", "album": "album1", "artist": "artist1" },
+        { "name": "music2", "album": "album2", "artist": "artist2" },
+        { "name": "music3", "album": "album3", "artist": "artist3" },
+        { "name": "music4", "album": "album4", "artist": "artist4" },
+        { "name": "music5", "album": "album5", "artist": "artist5" }
+      ]
+    },
+    {
+      "id": 5,
+      "playlist": "Coven's Call",
+      "creator": "user5",
+      "image": "https://picsum.photos/200",
+      "genre": "Death Metal",
+      "song": [
+        { "name": "music1", "album": "album1", "artist": "artist1" },
+        { "name": "music2", "album": "album2", "artist": "artist2" },
+        { "name": "music3", "album": "album3", "artist": "artist3" },
+        { "name": "music4", "album": "album4", "artist": "artist4" },
+        { "name": "music5", "album": "album5", "artist": "artist5" }
+      ]
+    },
+    {
+      "id": 6,
+      "playlist": "Immortal Journey",
+      "creator": "user6",
+      "image": "https://picsum.photos/200",
+      "genre": "Chinese Classical Music",
+      "song": [
+        { "name": "music1", "album": "album1", "artist": "artist1" },
+        { "name": "music2", "album": "album2", "artist": "artist2" },
+        { "name": "music3", "album": "album3", "artist": "artist3" },
+        { "name": "music4", "album": "album4", "artist": "artist4" },
+        { "name": "music5", "album": "album5", "artist": "artist5" }
+      ]
+    }
+  ]
+}

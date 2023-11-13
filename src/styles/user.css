@@ -1,0 +1,136 @@
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4em;
+}
+/*Status Bar*/
+.user_statusBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1em;
+  border-bottom: 0.05em solid var(--white-20);
+}
+.user_statusBar button {
+  background: none;
+  border: none;
+  width: 3em;
+  height: 1em;
+  cursor: pointer;
+}
+.fa_icon {
+  color: var(--white-30);
+  font-size: 1em;
+}
+.user_statusBar button :hover {
+  color: var(--white-color);
+}
+/**Profile*/
+.user_profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.user_profile_imgBox {
+  width: 10.6em;
+  height: 10.6em;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.user_profile_background {
+  position: absolute;
+  z-index: 1;
+  width: 10.6em;
+  height: 10.6em;
+  background: var(--gradient);
+  border-radius: 100%;
+  transition: background 0.2s ease;
+}
+.user_profile_imgBox:hover .user_profile_background {
+  animation: rotate360 2s linear infinite;
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.user_profile_imgBox img {
+  width: 10em;
+  height: 10em;
+  object-fit: cover;
+  border-radius: 100%;
+  z-index: 10;
+}
+
+.user_profile_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.user_profile_info h3 {
+  color: var(--white-color);
+}
+
+.user_profile_info p {
+  color: var(--white-30);
+}
+
+/**playlist-title*/
+.user_playlists {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  justify-content: center;
+  align-items: center;
+}
+.user_playlists_title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.user_playlists_title h3 {
+  color: var(--primary-color);
+  font-size: 1em;
+}
+.user_playlists_title p {
+  color: var(--secondary-color);
+  font-size: 0.8em;
+}
+/*playlist-item*/
+.user_playlists_item {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1.5em;
+  padding-right: 2em;
+}
+
+.user_playlists_item img {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 100%;
+}
+.user_playlists_item h3 {
+  color: var(--white-color);
+  font-size: 1em;
+  font-weight: normal;
+}
+.user_playlists_item p {
+  color: var(--white-30);
+  font-size: 0.8em;
+}

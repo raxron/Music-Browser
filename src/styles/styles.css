@@ -1,0 +1,37 @@
+:root {
+  --primary-color: #a162bf;
+  --secondary-color: #f1c7ff;
+  --black-color: #09090a;
+  --white-color: #fff9ff;
+  --white-20: rgba(255, 249, 255, 0.2);
+  --white-30: rgba(255, 249, 255, 0.3);
+  --gradient: linear-gradient(
+    180deg,
+    rgba(167, 62, 231, 1) 0%,
+    rgba(0, 235, 255, 1) 100%
+  );
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--black-color);
+}
+
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
