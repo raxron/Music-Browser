@@ -4,3 +4,45 @@ h3,
 li {
   color: var(--white-color);
 }
+
+.playlist_container {
+  display: flex;
+  justify-content: center;
+}
+
+.playlist_image {
+  padding: 10%;
+}
+
+.playlist_info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: var(--primary-color);
+  line-height: 200%;
+  gap: 10%;
+}
+
+.playlist_info h2 {
+  color: var(--primary-color);
+}
+.playlist_info h3 {
+  color: var(--secondary-color);
+}
+
+.songTitle {
+  font-size: large;
+  text-align: left;
+  margin-top: 10%;
+}
+.songArtist {
+  font-size: small;
+}
+
+.playlist_songs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
