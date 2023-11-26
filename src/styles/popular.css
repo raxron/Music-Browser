@@ -1,3 +1,49 @@
-.popular_list{
-    margin-top: 2em;
+.popular_list {
+  margin-top: 2em;
+}
+
+@media (max-width: 768px) {
+  .home {
+    justify-content: space-around;
+    gap: 0.5em;
+  }
+
+  .nav_icon {
+    display: flex;
+  }
+  .nav {
+    display: none;
+  }
+
+  .nav_icon_links {
+    display: flex;
+    width: 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-left: 0.5em;
+    padding-top: 5.75em;
+  }
+  .nav_icon_links img {
+    width: 1em;
+  }
+  .nav_icon_item {
+    width: 1.8em;
+    height: 1.8em;
+    background-color: var(--white-20);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fa_navIcon {
+    font-size: 1em;
+    color: var(--white-color);
+  }
+
+  .lyric-container,
+  .user-container {
+    display: none;
+  }
 }

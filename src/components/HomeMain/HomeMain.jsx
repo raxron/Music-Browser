@@ -75,7 +75,7 @@ export default function HomeMain() {
       <div className="main_lists">
         {lists.length > 0 && (
           <div className="list_section_direct">
-            <h3 className="my_list_title">My List</h3>
+            <h3>My List</h3>
             <div className="main_lists_itemContainer">
               <ul className="main_lists_item">
                 {lists.map((list, index) => (
@@ -106,7 +106,7 @@ export default function HomeMain() {
                             Edit
                           </button>
                           <button
-                            className="purple-button"
+                          className="purple-button"
                             onClick={() => handleDeleteButtonClick(index)}
                           >
                             Delete
@@ -120,7 +120,7 @@ export default function HomeMain() {
             </div>
           </div>
         )}
-        <MyList lists={lists} />
+        <MyList />
       </div>
     </div>
   );

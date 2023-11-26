@@ -3,8 +3,9 @@ import data from "../../data/data.json";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function MyList() {
+export default function MyList({ isPopularPage }) {
   const [playlists, setPlaylists] = useState([]);
+  const listTitle = isPopularPage ? "Popular" : "New Songs";
 
   useEffect(() => {
     setPlaylists(data.music);
@@ -12,7 +13,7 @@ export default function MyList() {
 
   return (
     <div className="main_lists_itemContainer">
-      <h3>Popular</h3>
+      <h3>{listTitle}</h3>
       <div className="main_lists_item">
         {playlists.map((p) => (
           <Link

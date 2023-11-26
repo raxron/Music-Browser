@@ -2,11 +2,12 @@ import "../../styles/search.css";
 import { useState, useEffect, useRef } from "react";
 import SearchRecommend from "./SearchRecommend";
 import data from "../../data/data.json";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFaceSadCry } from "@fortawesome/free-regular-svg-icons";
 import SearchBar from "./SearchBar";
 import HomeMain from "../HomeMain/HomeMain";
+import PopularList from "../HomeMain/PopularList";
 
 export default function Search() {
   const inputRef = useRef();
@@ -14,6 +15,7 @@ export default function Search() {
   const [load, setLoad] = useState(false);
   const [query, setQuery] = useState("");
   const [focused, setFocused] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     setPlaylists(data.music);
@@ -28,7 +30,7 @@ export default function Search() {
         p.song.some(
           (s) =>
             s.name.toLowerCase().includes(term) ||
-            s.artist.toLowerCase().includes(term),
+            s.artist.toLowerCase().includes(term)
         ) ||
         p.creator.toLowerCase().includes(term)
       );
@@ -60,7 +62,11 @@ export default function Search() {
           {!focused ? (
             <>
               <div>
-                <HomeMain />
+                {location.pathname.includes("/popular") ? (
+                  <PopularList />
+                ) : (
+                  <HomeMain />
+                )}
               </div>
             </>
           ) : (
@@ -76,7 +82,9 @@ export default function Search() {
                       >
                         <img src={p.image} alt={`Playlist ${p.id + 1}`} />
                         <h3>{p.playlist}</h3>
-                        <p class="search_content_container_p">{p.creator}</p>
+                        <p className="search_content_container_p">
+                          {p.creator}
+                        </p>
                       </Link>
                     ))}
                   </div>

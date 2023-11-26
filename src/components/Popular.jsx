@@ -1,7 +1,6 @@
 import "../styles/myList.css";
 import "../styles/home.css";
 import "../styles/popular.css";
-import MyList from "./HomeMain/MyList";
 import Nav from "./HomeMain/Nav";
 import Search from "./Search/Search";
 import Lyric from "./HomeMain/Lyric";
@@ -13,11 +12,13 @@ export default function Popular() {
       <div>
         <Nav />
       </div>
-      <div className="popular_list">
-        <MyList/>
+      <div className="search-container">
+        <Search />
+      </div>
+      <div className="lyric-container">
         <Lyric />
       </div>
-      <div>
+      <div className="user-container">
         <User />
       </div>
     </div>
