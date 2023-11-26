@@ -46,7 +46,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 1em;
   grid-row-gap: 1em;
-  margin-bottom: 1.5em;
+  margin-bottom: 2.5em;
 }
 .main_lists_item img {
   width: 100%;
@@ -68,3 +68,17 @@
   list-style: none;
   margin: 0;
 }
+
+.purple-button {
+  border: none;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  padding: 5px 8px; 
+  cursor: pointer;
+  margin-right: 8px; 
+}
+
+.my_list_title{
+  margin-bottom: 15px;
+}
+
