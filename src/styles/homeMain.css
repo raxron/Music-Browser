@@ -47,6 +47,7 @@
   grid-column-gap: 1em;
   grid-row-gap: 1em;
   margin-bottom: 2.5em;
+  margin-top: 2em;
 }
 .main_lists_item img {
   width: 100%;
