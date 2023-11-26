@@ -32,3 +32,9 @@
 .main_lists_item_content:hover h3 {
   color: var(--primary-color);
 }
+
+@media screen and (max-width: 768px) {
+  .main_lists_item {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+}

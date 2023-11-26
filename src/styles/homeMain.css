@@ -83,3 +83,38 @@
   margin-bottom: 15px;
 }
 
+@media screen and (max-width: 768px) {
+  .main_title {
+    text-align: left;
+    margin-bottom: 0px;
+  }
+
+  .main_title h1 {
+    font-size: 2em; 
+  }
+
+  .additional_input {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .additional_input input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid var(--primary-color);
+    outline: none;
+    font-size: 1em;
+    text-align: left;
+    height: 30px; 
+    width: 45%;
+  }
+
+  .add_button {
+    font-size: 1em; 
+    padding: 0.7em;
+  }
+
+  .main_lists_itemContainer {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}

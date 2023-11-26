@@ -5,17 +5,20 @@ import Search from "./Search/Search";
 import { Link } from "react-router-dom";
 import Nav from "./HomeMain/Nav";
 import Lyric from "./HomeMain/Lyric";
+
 export default function Home() {
   return (
     <div className="home">
       <div>
         <Nav />
       </div>
-      <div>
+      <div className="search-container">
         <Search />
+      </div>
+      <div className="lyric-container">
         <Lyric />
       </div>
-      <div>
+      <div className="user-container">
         <User />
       </div>
     </div>

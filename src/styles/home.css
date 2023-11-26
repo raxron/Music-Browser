@@ -95,6 +95,11 @@
   display: none;
 }
 @media (max-width: 768px) {
+  .home {
+    justify-content: space-around;
+    gap: 0.5em;
+  }
+
   .nav_icon {
     display: flex;
   }
@@ -108,16 +113,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2em;
-    margin-left: 1.5em;
+    gap: 1em;
+    margin-left: 0.5em;
     padding-top: 5.75em;
   }
   .nav_icon_links img {
-    width: 2em;
+    width: 1em;
   }
   .nav_icon_item {
-    width: 2em;
-    height: 2em;
+    width: 1.8em;
+    height: 1.8em;
     background-color: var(--white-20);
     border-radius: 100%;
     display: flex;
@@ -127,5 +132,10 @@
   .fa_navIcon {
     font-size: 1em;
     color: var(--white-color);
+  }
+
+  .lyric-container,
+  .user-container {
+    display: none;
   }
 }
